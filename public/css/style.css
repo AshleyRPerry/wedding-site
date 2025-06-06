@@ -12,7 +12,7 @@ html {
 }
 :root {
   --dusty-pink: #d8b4a2;
---sage-green: #738678;
+  --sage-green: #738678;
   --dusty-mint: #c4dad4;
   --dark-gray: #524d4d;
   --light-gray: #f0f0f0;
@@ -41,7 +41,7 @@ html {
     }
 }
 
-.parallax-image {
+/* .parallax-image {
   background-image: url("../static/image/barcelona.jpg");
   
   min-height: 500px;
@@ -51,13 +51,13 @@ html {
   background-size: cover;
 }
 
-/* Disable fixed background on smaller devices */
+Disable fixed background on smaller devices 
 @media only screen and (max-width: 800px) {
   .parallax-image {
     background-attachment: scroll;
     height: 200px;
   }
-}
+} */
 
 header {
   background-color: var(--sage-green);
