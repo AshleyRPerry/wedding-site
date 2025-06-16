@@ -96,12 +96,16 @@ html {
    background-size: cover;
 }
 
- /*Disable fixed background on smaller devices
+ /*Disable fixed background on smaller devices*/
 @media only screen and (max-width: 800px) {
-  .parallax-image {
+  .parallax-image1,
+  .parallax-image2,
+  .parallax-image3,
+  .parallax-image4 {
     background-attachment: scroll;
-    height: 200px;
-  }*/
+    height: 250px;
+  }
+}
 
 
 header {
