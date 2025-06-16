@@ -11,14 +11,29 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --dusty-pink: #d8b4a2;
-  --sage-green: #738678;
+  --dusty-pink: #DEA193;
+--sage-green: #5E7054;
   --dusty-mint: #c4dad4;
   --dark-gray: #524d4d;
   --light-gray: #f0f0f0;
 }
 
+.banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  margin-bottom: 2rem;
+}
 
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 .image {
     height: 50vh;
@@ -40,8 +55,7 @@ html {
         height: 500px;
     }
 }
-
-/* .parallax-image {
+ .parallax-image {
   background-image: url("../static/image/barcelona.jpg");
   
   min-height: 500px;
@@ -51,13 +65,13 @@ html {
   background-size: cover;
 }
 
-Disable fixed background on smaller devices 
+ /*Disable fixed background on smaller devices*/ 
 @media only screen and (max-width: 800px) {
   .parallax-image {
     background-attachment: scroll;
     height: 200px;
   }
-} */
+} 
 
 header {
   background-color: var(--sage-green);
