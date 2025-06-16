@@ -19,12 +19,12 @@ html {
 }
 
 .banner {
-  width: 100%;
+  width: 97.9%;
   max-height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   background-color: var(--sage-green);
   margin-bottom: 2rem;
 }

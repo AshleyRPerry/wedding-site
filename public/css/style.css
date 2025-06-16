@@ -19,13 +19,13 @@ html {
 }
 
 .banner {
-  width: 100%;
-  max-height: 400px;
+  width: 97.9%;
+  max-height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-gray);
+  background-color: var(--sage-green);
   margin-bottom: 2rem;
 }
 
@@ -33,6 +33,7 @@ html {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
 }
 
 .image {
