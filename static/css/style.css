@@ -248,7 +248,7 @@ section {
   }
 
   header {
-    padding: 0px;
+    padding: 10px;
     width: 100%
     font-size: 1rem;
     text-align: center;
@@ -288,7 +288,8 @@ section {
   .parallax-image3,
   .parallax-image4 {
     background-attachment: scroll; /* Disable fixed background */
-    height: 250px;
+    height: 100%;
+    width: 100%
   }
 
   iframe {
