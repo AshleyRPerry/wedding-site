@@ -11,8 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --dusty-pink: #DEA193;
---sage-green: #5E7054;
+  --dusty-pink: #F690A6;
+  --sage-green: #5E7054;
   --dusty-mint: #c4dad4;
   --dark-gray: #524d4d;
   --light-gray: #f0f0f0;
@@ -43,7 +43,7 @@ html {
     filter: saturate(0)
 }
 
-@media only screen and (mid-width: 800px) {
+@media only screen and (min-width: 800px) {
 
     .image {
         min-height: 200px;
@@ -56,23 +56,53 @@ html {
         height: 500px;
     }
 }
- .parallax-image {
-  background-image: url("../static/image/barcelona.jpg");
+ .parallax-image1 {
+   background-image: url("/wedding-site/image/barcelona.jpg");
   
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   height: 600px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
- /*Disable fixed background on smaller devices*/ 
+ .parallax-image2 {
+   background-image: url("/wedding-site/image/eiffeltower.jpg");
+  
+   height: 600px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ .parallax-image3 {
+   background-image: url("/wedding-site/image/lucaboat.jpg");
+  
+   height: 600px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ .parallax-image4 {
+   background-image: url("/wedding-site/image/trevifountain.jpg");
+  
+   height: 600px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ /*Disable fixed background on smaller devices
 @media only screen and (max-width: 800px) {
   .parallax-image {
     background-attachment: scroll;
     height: 200px;
-  }
-} 
+  }*/
+
 
 header {
   background-color: var(--sage-green);
