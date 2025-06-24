@@ -10,8 +10,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 :root {
-  --dusty-pink: #F690A6;
+  --dusty-pink:  #f6b092;
   --sage-green: #5E7054;
   --dusty-mint: #c4dad4;
   --dark-gray: #524d4d;
@@ -36,6 +37,14 @@ html {
   display: block;
 }
 
+/*.decorative-divider {
+  display: block;
+  margin: 2rem auto;
+  max-width: 300px;
+  width: min(300px, 80%);
+  height: auto;
+} */ 
+
 .image {
     height: 50vh;
     background-size: cover;
@@ -57,7 +66,7 @@ html {
     }
 }
  .parallax-image1 {
-   background-image: url("/wedding-site/image/barcelona.jpg");
+   background-image: url("/wedding-site/image/pompeii.jpg");
   
    height: 600px;
    background-attachment: fixed;
@@ -188,9 +197,13 @@ footer {
   margin: 2rem auto;
   padding: 1rem;
   background-color: var(--dusty-pink);
+  gap: 1.5rem;
 }
 
-.info-block {
+.info-block iframe {
+  width: 400px;
+  height: 250px;
+  border: none;
   flex: 1;
   padding: 0 1rem;
 }
@@ -210,9 +223,10 @@ footer {
     display: none; /* Hide the vertical divider for stacked layout */
   }
 
-  .info-block {
+  .info-block iframe {
     padding: 1rem 0;
     width: 100%; /* Full width for each block */
+    height: 200px;
   }
 }
 
