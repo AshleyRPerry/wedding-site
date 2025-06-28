@@ -254,50 +254,9 @@ footer {
   font-weight: bold;
 }
 
-.nav-mobile {
-  display: none; /* Hidden on desktop */
-}
-
 @media (max-width: 800px) {
-  .nav-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
-    position: relative;
-  }
-
-  .nav-mobile__button {
-    background-color: var(--sage-green);
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    background-color: var(--sage-green);
-    padding: 1rem;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 200px;
+  .navbar {
     display: none;
-    border-radius: 0 0 5px 5px;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  .nav-links li a {
-    color: var(--dusty-pink);
   }
 }
 
