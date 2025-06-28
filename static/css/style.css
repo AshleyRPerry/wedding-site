@@ -4,10 +4,12 @@ body {
   box-sizing: border-box;
   background-color: var(--dusty-pink);
   color: var(--dark-gray);
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 :root {
@@ -31,7 +33,7 @@ html {
 
 .banner img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -212,7 +214,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 0px;
 }
 
 .nav-links {
@@ -280,5 +282,24 @@ h3 {
   font-size: 1.75rem;
   font-weight: 600;
   margin-top: 1.5rem;
+}
+
+/* Responsive font scaling */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h4, p {
+    font-size: 0.95em;
+  }
 }
 
