@@ -1,7 +1,6 @@
 body {
   font-family: 'Gilda Display';
   margin: 0;
-  padding: 0px;
   box-sizing: border-box;
   background-color: var(--dusty-pink);
   color: var(--dark-gray);
@@ -116,14 +115,15 @@ html {
 }
 
  /*Disable fixed background on smaller devices*/
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .parallax-image1,
   .parallax-image2,
   .parallax-image3,
-  .parallax-image4
+  .parallax-image4,
   .parallax-image5 {
     background-attachment: scroll;
-    height: 250px;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
@@ -131,7 +131,7 @@ html {
 header {
   background-color: var(--sage-green);
   width:100%;
-  color: var(--dusty-mint);
+  color: var(--dusty-pink);
   padding: 10px 20px;
   min-height: 100px;
   display: flex;
@@ -271,7 +271,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-top: 1.5rem;
 }
