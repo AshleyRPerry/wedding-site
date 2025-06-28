@@ -161,7 +161,10 @@ header {
 
 section {
   margin-bottom: 40px;
+  text-align: center;
+  padding: 10px 150px;
 }
+
 
 footer {
   text-align: center;
@@ -196,23 +199,30 @@ footer {
   background-color: var(--sage-green);
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
+  section,
+  .info-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
   .info-container {
     flex-direction: column;
     align-items: center;
     border: 3px solid var(--sage-green);
-    margin-left: calc(-1 * (20px));
-    margin-right: calc(-1 * (20px));
-  }
-
-  .divider {
-    display: none; /* Hide the vertical divider for stacked layout */
   }
 
   .info-block iframe {
-    padding: 0rem 0;
-    width: 100%; /* Full width for each block */
+    width: 100%;
     height: 200px;
+  }
+
+  .divider {
+    display: none;
   }
 }
 
@@ -250,18 +260,6 @@ footer {
   }
 }
 
-
-section {
-    text-align: center;
-    padding: 10px 150px;
-}
-
-@media (max-width: 800px) {
-    section {
-        padding: 10px 20px;
-    }
-
-}
 
 h1 {
   font-size: 2.5rem;
