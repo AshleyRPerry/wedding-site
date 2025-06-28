@@ -114,7 +114,7 @@ html {
    background-size: cover;
 }
 
- /*Disable fixed background on smaller devices*/
+/* Parallax effect for smaller screens */
 @media (max-width: 800px) {
   .parallax-image1,
   .parallax-image2,
@@ -249,6 +249,12 @@ footer {
 section {
     text-align: center;
     padding: 10px 150px;
+}
+
+@media (max-width: 800px) {
+    section {
+        padding: 10px 20px;
+    }
 }
 
 h1 {
