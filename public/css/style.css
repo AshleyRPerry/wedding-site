@@ -1,38 +1,42 @@
 body {
   font-family: 'Gilda Display';
   margin: 0;
-  padding: 0px;
   box-sizing: border-box;
   background-color: var(--dusty-pink);
   color: var(--dark-gray);
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 :root {
-  --dusty-pink:  #ff9a8a;
-  --sage-green: #5E7054;
+  --dusty-pink:  #ffb07c;
+  --sage-green: #5e7054;
   --dusty-mint: #c4dad4;
   --dark-gray: #524d4d;
   --light-gray: #f0f0f0;
+  --white: #ffffff;
 }
 
 .banner {
-  width: 100%;
+  width: 95%;
+  max-width: 100%;
   max-height: 100%;
-  overflow: clip;
+  /*overflow: clip;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--sage-green);
+  background-color: var(--dusty-pink);
   margin-bottom: 2rem;
 }
 
 .banner img {
   width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -115,23 +119,26 @@ html {
    background-size: cover;
 }
 
- /*Disable fixed background on smaller devices*/
-@media only screen and (max-width: 800px) {
+/* Parallax effect for smaller screens */
+@media (max-width: 800px) {
   .parallax-image1,
   .parallax-image2,
   .parallax-image3,
-  .parallax-image4
+  .parallax-image4,
   .parallax-image5 {
-    background-attachment: scroll;
-    height: 250px;
+    height:300px;
+    background-attachment: scroll; /* Disable fixed attachment for smaller screens */
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
 }
 
 
 header {
-  background-color: var(--sage-green);
-  width:100%;
-  color: var(--dusty-mint);
+  background-color: var(--dusty-pink);
+  width:95%;
+  color: var(--dusty-pink);
   padding: 10px 20px;
   min-height: 100px;
   display: flex;
@@ -155,7 +162,10 @@ header {
 
 section {
   margin-bottom: 40px;
+  text-align: center;
+  padding: 10px 150px;
 }
+
 
 footer {
   text-align: center;
@@ -168,7 +178,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  border: 7px solid var(--sage-green);
   margin: 2rem auto;
   padding: 1rem;
   background-color: var(--dusty-pink);
@@ -187,23 +196,32 @@ footer {
 
 .divider {
   width: 7px;
-  background-color: var(--sage-green);
+  background-color: var(--dark-gray);
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
+  section,
+  .info-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
   .info-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .divider {
-    display: none; /* Hide the vertical divider for stacked layout */
+  .info-block iframe {
+    width: 100%;
+    height: 200px;
   }
 
-  .info-block iframe {
-    padding: 0rem 0;
-    width: 100%; /* Full width for each block */
-    height: 200px;
+  .divider {
+    display: none;
   }
 }
 
@@ -212,7 +230,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 0px;
 }
 
 .nav-links {
@@ -222,34 +240,25 @@ footer {
 }
 
 .nav-links li a {
-  color: var(--dusty-mint);
+  color: var(--dark-gray);
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-mobile {
-    position: fixed;
-    display: flex;
-    flex-direction: row-reverse;
+@media (max-width: 800px) {
+  .nav-links {
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .nav-links li a {
+    padding: 5px;
+    display: block;
+  }
 }
 
-.nav-mobile__button {
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 50px;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
-  background-color: var(--dusty-pink);
-  border-radius: 50%;
-}
-
-section {
-    text-align: center;
-    padding: 10px 150px;
-}
 
 h1 {
   font-size: 2.5rem;
@@ -265,14 +274,30 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--dark-gray);
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-decoration-color: var(--sage-green);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-top: 1.5rem;
+}
+
+/* Responsive font scaling */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h4, p {
+    font-size: 0.95em;
+  }
 }
 

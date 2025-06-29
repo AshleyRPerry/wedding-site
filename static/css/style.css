@@ -13,22 +13,23 @@ html {
 }
 
 :root {
-  --dusty-pink:  #ff9a8a;
-  --sage-green: #5E7054;
+  --dusty-pink:  #ffb07c;
+  --sage-green: #5e7054;
   --dusty-mint: #c4dad4;
   --dark-gray: #524d4d;
   --light-gray: #f0f0f0;
+  --white: #ffffff;
 }
 
 .banner {
-  width: 100%;
+  width: 95%;
   max-width: 100%;
   max-height: 100%;
-  overflow: clip;
+  /*overflow: clip;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--sage-green);
+  background-color: var(--dusty-pink);
   margin-bottom: 2rem;
 }
 
@@ -135,8 +136,8 @@ html {
 
 
 header {
-  background-color: var(--sage-green);
-  width:100%;
+  background-color: var(--dusty-pink);
+  width:95%;
   color: var(--dusty-pink);
   padding: 10px 20px;
   min-height: 100px;
@@ -177,7 +178,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  border: 7px solid var(--sage-green);
   margin: 2rem auto;
   padding: 1rem;
   background-color: var(--dusty-pink);
@@ -196,7 +196,7 @@ footer {
 
 .divider {
   width: 7px;
-  background-color: var(--sage-green);
+  background-color: var(--dark-gray);
 }
 
 @media (max-width: 800px) {
@@ -213,7 +213,6 @@ footer {
   .info-container {
     flex-direction: column;
     align-items: center;
-    border: 3px solid var(--sage-green);
   }
 
   .info-block iframe {
@@ -241,7 +240,7 @@ footer {
 }
 
 .nav-links li a {
-  color: var(--dusty-mint);
+  color: var(--dark-gray);
   text-decoration: none;
   font-weight: bold;
 }
@@ -275,9 +274,6 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--dark-gray);
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-decoration-color: var(--sage-green);
 }
 
 h3 {
