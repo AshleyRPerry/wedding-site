@@ -127,7 +127,7 @@ html {
   .parallax-image4,
   .parallax-image5 {
     height:300px;
-    background-attachment: scroll; /* Disable fixed attachment for smaller screens */
+    background-attachment: fixed; /* Disable fixed attachment for smaller screens */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -283,7 +283,7 @@ h3 {
 }
 
 /* Responsive font scaling */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     font-size: 16px;
   }
